@@ -1,0 +1,28 @@
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title style="margin-top: 10px;">LOGIN PAGE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <div>
+        <img src="../../assets/img/future-finder-logo.png" style="padding-top: 85px;margin-left:75px;width: 50%;" alt="">
+      </div>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email" name="email" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block (click)="doLogin(user)">Login</button>
+        <br>
+        <a (click)="signupClick()" style="margin-left:100px;">Need Signup?</a>
+      </div>
+</ion-content>

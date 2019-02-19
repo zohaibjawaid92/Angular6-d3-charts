@@ -1,0 +1,8 @@
+{
+  "name": "unibook",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "084bab77"
+}
